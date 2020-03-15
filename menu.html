@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="menus" class="overlay">
+        <a href="javascript:void(0)" class="close" onclick="closeMenu()">&times;</a>
+        <div class="overlay-content">
+            <a href="#">about</a>
+            <a href="#">services</a>
+            <a href="#">Contract</a>
+        </div>
+    </div>
+    <div class="center">
+        <button onclick="openMenu()">MENU</button>
+    </div>
+    <script>
+        function openMenu() {
+            document.getElementById("menus").style.width = "100%";
+
+        }
+
+        function closeMenu() {
+            document.getElementById("menus").style.width = "0%";
+
+        }
+    </script>
+</body>
+
+</html>
