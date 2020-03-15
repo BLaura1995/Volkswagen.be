@@ -1,24 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="js/menu.js">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Hello, world!</title>
 </head>
 
 <body>
+    <div class="center">
+        <button onclick="openMenu()"><i class="fa fa-bars"></i></button>
+    </div>
+    <!-- <div class="navbar-nav bg-dark"> -->
     <div id="menus" class="overlay">
-        <a href="javascript:void(0)" class="close" onclick="closeMenu()">&times;</a>
-        <div class="overlay-content">
-            <a href="#">about</a>
-            <a href="#">services</a>
-            <a href="#">Contract</a>
+        <a href="javascript:void(0)" class="close my-3 mx-3" onclick="closeMenu()">&times;</a>
+        <div class="overlay-content container-fluid ">
+            <div class="row my-5">
+                <div class="col-sm-8 ">
+                    <a href="#">Modellen en congfigurator</a>
+                    <a href="#">Koop een Volkswagen</a>
+                    <a href="#">e-mobility en Technologieën</a>
+                    <a href="#">Alles over Volkswagen</a>
+                    <a href="#">Bestuurders en eigenaars</a>
+                </div>
+                <div class="col-sm-3 border-left">
+                    <a href="" class="text-white py-3">Vind een dealer</a>
+                    <a href="" class="text-white py-3">Ontdek onze aanbiedingen</a>
+
+                    <img src="img/ID3-Flyout.jfif" width="200px" height="200px" alt="">
+                    <a class="px-3" href=""><strong>ID.3</strong> - 100% elektrisch voor iedereen</a>
+                </div>
+            </div>
+            <div class="row in mx-5">
+                <a href="#">about</a>
+                <a href="#">services</a>
+                <a href="#">Contract</a>
+            </div>
         </div>
     </div>
-    <div class="center">
-        <button onclick="openMenu()">MENU</button>
-    </div>
+
+
+
     <script>
         function openMenu() {
             document.getElementById("menus").style.width = "100%";
@@ -30,6 +60,11 @@
 
         }
     </script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 
 </html>
